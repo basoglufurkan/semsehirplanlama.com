@@ -1,0 +1,112 @@
+/* İmar planı SVG çizim stilleri */
+.z-konut { --z: var(--konut); }
+.z-ticaret { --z: var(--ticaret); }
+.z-yesil { --z: var(--yesil); }
+.z-donati { --z: var(--donati); }
+
+.plan .parcel,
+.plan .block {
+  fill: var(--z);
+  transition: opacity 0.45s var(--ease);
+}
+
+.plan .parcel[data-zone='yesil'] {
+  fill: color-mix(in srgb, var(--yesil) 55%, var(--paper));
+}
+
+.plan .bldg {
+  fill: color-mix(in oklab, var(--z) 62%, var(--ink));
+  opacity: 0.55;
+  transition: opacity 0.45s var(--ease);
+}
+
+.plan .water { fill: var(--water); }
+
+.plan .bank {
+  fill: none;
+  stroke: color-mix(in srgb, var(--donati) 70%, var(--ink));
+  stroke-width: 1;
+  opacity: 0.6;
+}
+
+.plan .avenue {
+  stroke: var(--paper);
+  stroke-linecap: butt;
+}
+
+.plan .road-edge {
+  stroke: var(--ink);
+  stroke-width: 1;
+  opacity: 0.45;
+}
+
+.plan .road-axis {
+  stroke: var(--ink);
+  stroke-width: 1;
+  stroke-dasharray: 6 7;
+  opacity: 0.35;
+}
+
+.plan .plaza {
+  fill: var(--paper);
+  stroke: var(--ink);
+  stroke-width: 1;
+}
+
+.plan .plaza-inner { fill: color-mix(in srgb, var(--yesil) 70%, var(--paper)); }
+.plan .plaza-core { fill: var(--accent); }
+
+.plan .tree {
+  fill: color-mix(in oklab, var(--yesil) 75%, var(--ink));
+  opacity: 0.85;
+  transition: opacity 0.45s var(--ease);
+}
+
+.plan .tree--street { opacity: 0.7; }
+
+.plan .plan-label {
+  font-family: var(--f-mono);
+  font-size: 5.5px;
+  font-weight: 500;
+  fill: var(--ink);
+  text-anchor: middle;
+  dominant-baseline: middle;
+  letter-spacing: 0.02em;
+}
+
+.plan .plan-label--park { fill: color-mix(in oklab, var(--yesil) 40%, var(--ink)); }
+
+.plan .macro-tarim { fill: #dfe3c4; }
+.plan .macro-orman { fill: #9fbd8a; }
+.plan .macro-kent { fill: color-mix(in srgb, var(--konut) 70%, var(--paper)); }
+.plan .macro-merkez { fill: var(--ticaret); opacity: 0.85; }
+
+.plan .macro-dere {
+  fill: none;
+  stroke: var(--water);
+  stroke-linecap: round;
+}
+
+/* Lejant vurgusu */
+.plan[data-focus] .parcel,
+.plan[data-focus] .bldg,
+.plan[data-focus] .tree {
+  opacity: 0.12;
+}
+
+.plan[data-focus='konut'] [data-zone='konut'],
+.plan[data-focus='ticaret'] [data-zone='ticaret'],
+.plan[data-focus='donati'] [data-zone='donati'],
+.plan[data-focus='yesil'] [data-zone='yesil'],
+.plan[data-focus='yesil'] .tree {
+  opacity: 1;
+}
+
+.plan[data-focus='konut'] .bldg[data-zone='konut'],
+.plan[data-focus='ticaret'] .bldg[data-zone='ticaret'],
+.plan[data-focus='donati'] .bldg[data-zone='donati'] {
+  opacity: 0.55;
+}
+
+/* Proje görsellerinde biraz daha koyu bina tonları */
+.project__media .plan .bldg { opacity: 0.7; }

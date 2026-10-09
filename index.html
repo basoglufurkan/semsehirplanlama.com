@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sem Şehir Planlama | Şehir Plancısı Semina Dağlı Başoğlu</title>
+    <meta
+      name="description"
+      content="Sem Şehir Planlama: imar planları, plan değişikliği, parselasyon, kentsel dönüşüm, kentsel tasarım ve imar danışmanlığı. Şehir Plancısı Semina Dağlı Başoğlu."
+    />
+    <meta name="theme-color" content="#13201b" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:title" content="Sem Şehir Planlama" />
+    <meta
+      property="og:description"
+      content="Kentin yarınını bugünden çiziyoruz. İmar planından kentsel tasarıma, şehir planlama hizmetleri."
+    />
+    <link rel="canonical" href="https://www.semsehirplanlama.com/" />
+    <meta property="og:url" content="https://www.semsehirplanlama.com/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Sem Şehir Planlama",
+        "url": "https://www.semsehirplanlama.com/",
+        "description": "İmar planları, plan değişikliği, parselasyon, kentsel dönüşüm, kentsel tasarım ve imar danışmanlığı.",
+        "founder": { "@type": "Person", "name": "Semina Dağlı Başoğlu", "jobTitle": "Şehir Plancısı" },
+        "telephone": "+905397277678",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Bulancak Mahallesi Hasan Demirel Sokak No:7, Remzi Karaibrahim İş Merkezi, Kat:3 Daire:7",
+          "addressLocality": "Bulancak",
+          "addressRegion": "Giresun",
+          "addressCountry": "TR"
+        },
+        "areaServed": "TR"
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- Açılış ekranı -->
+    <div class="loader" aria-hidden="true">
+      <div class="loader__grid">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="loader__inner">
+        <p class="loader__brand">Sem Şehir Planlama</p>
+        <p class="loader__meta mono"><span>Pafta yükleniyor</span><span class="loader__count">000</span></p>
+        <div class="loader__bar"><span></span></div>
+      </div>
+    </div>
+
+    <div class="progress" aria-hidden="true"><span></span></div>
+    <div class="cursor" aria-hidden="true">
+      <svg class="cursor__cad" viewBox="-30 -30 60 60">
+        <path class="cursor__arms" d="M-26 0H-7M7 0H26M0-26V-7M0 7V26" />
+        <rect class="cursor__pick" x="-3.5" y="-3.5" width="7" height="7" />
+        <path class="cursor__snap" d="M-16-9V-16H-9M9-16H16V-9M16 9V16H9M-9 16H-16V9" />
+      </svg>
+      <span class="cursor__coord">X 0000 · Y 00000</span>
+    </div>
+    <div class="cursor-tag" aria-hidden="true"><span></span></div>
+
+    <header class="header">
+      <div class="header__inner">
+        <a href="#anasayfa" class="brand" aria-label="Sem Şehir Planlama ana sayfa">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="8" class="bm-bg" />
+            <rect x="6" y="6" width="9" height="9" rx="1.5" class="bm-konut" />
+            <rect x="17" y="6" width="9" height="9" rx="1.5" class="bm-ticaret" />
+            <rect x="6" y="17" width="9" height="9" rx="1.5" class="bm-yesil" />
+            <rect x="17" y="17" width="9" height="9" rx="1.5" class="bm-donati" />
+            <line x1="3" y1="27" x2="29" y2="5" class="bm-road" />
+          </svg>
+          <span class="brand__text"><strong>Sem</strong> Şehir Planlama</span>
+        </a>
+
+        <nav class="nav" aria-label="Ana menü">
+          <a href="#hakkimizda" class="nav__link"><span data-text="Hakkımızda">Hakkımızda</span></a>
+          <a href="#hizmetler" class="nav__link"><span data-text="Hizmetler">Hizmetler</span></a>
+          <a href="#projeler" class="nav__link"><span data-text="Projeler">Projeler</span></a>
+          <a href="#surec" class="nav__link"><span data-text="Süreç">Süreç</span></a>
+          <a href="#sss" class="nav__link"><span data-text="SSS">SSS</span></a>
+        </nav>
+
+        <a href="#iletisim" class="btn btn--small btn--ink magnetic header__cta">
+          <span>İletişime geç</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Menüyü aç" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Mobil menü">
+        <a href="#hakkimizda"><small class="mono">01</small>Hakkımızda</a>
+        <a href="#hizmetler"><small class="mono">02</small>Hizmetler</a>
+        <a href="#projeler"><small class="mono">03</small>Projeler</a>
+        <a href="#surec"><small class="mono">04</small>Süreç</a>
+        <a href="#sss"><small class="mono">05</small>SSS</a>
+        <a href="#iletisim"><small class="mono">06</small>İletişim</a>
+      </nav>
+      <p class="mono mobile-menu__foot">Şehir Plancısı Semina Dağlı Başoğlu</p>
+    </div>
+
+    <main>
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="anasayfa">
+        <div class="hero__copy">
+          <p class="eyebrow mono hero__eyebrow">
+            <span class="dot"></span> Şehir Plancısı · Semina Dağlı Başoğlu
+          </p>
+          <h1 class="hero__title">
+            <span class="line">Kentin</span>
+            <span class="line">yarınını</span>
+            <span class="line">bugünden <em>çiziyoruz.</em></span>
+          </h1>
+          <p class="hero__lead">
+            İmar planından kentsel tasarıma, plan değişikliğinden kentsel dönüşüme kadar; mülkünüzü ve
+            kentinizi mevzuata uygun, insan odaklı ve uygulanabilir planlarla geleceğe taşıyoruz.
+          </p>
+          <div class="hero__actions">
+            <a href="#iletisim" class="btn btn--accent magnetic"><span>Projeye başlayalım</span><i>→</i></a>
+            <a href="#hizmetler" class="btn btn--ghost magnetic"><span>Hizmetleri keşfet</span></a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="sheet" data-cursor="Plan">
+            <span class="sheet__corner tl"></span><span class="sheet__corner tr"></span>
+            <span class="sheet__corner bl"></span><span class="sheet__corner br"></span>
+            <svg class="sheet__plan" id="hero-plan" aria-hidden="true"></svg>
+            <div class="sheet__north mono" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2 L17 20 L12 16 L7 20 Z" /></svg>K
+            </div>
+            <div class="sheet__antet mono" aria-hidden="true">
+              <div><small>Proje</small>Sem Şehir Planlama</div>
+              <div><small>Ölçek</small>1/1000</div>
+              <div><small>Pafta</small>01</div>
+            </div>
+          </div>
+          <ul class="legend" aria-label="Plan lejantı: üzerine gelerek alanları vurgulayın">
+            <li><button data-zone="konut"><i class="z-konut"></i>Konut Alanı</button></li>
+            <li><button data-zone="ticaret"><i class="z-ticaret"></i>Ticaret Alanı</button></li>
+            <li><button data-zone="yesil"><i class="z-yesil"></i>Yeşil Alan</button></li>
+            <li><button data-zone="donati"><i class="z-donati"></i>Sosyal Donatı</button></li>
+          </ul>
+        </div>
+
+        <div class="hero__foot mono">
+          <span class="scroll-hint"><i></i>Kaydırın</span>
+          <span class="hero__ticker">İmar Planı · Kentsel Tasarım · Kentsel Dönüşüm</span>
+        </div>
+      </section>
+
+      <!-- ============ KAYAN BANT ============ -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>İmar Planı</span><b>✦</b><span class="outline">Plan Değişikliği</span><b>✦</b>
+          <span>Kentsel Tasarım</span><b>✦</b><span class="outline">Kentsel Dönüşüm</span><b>✦</b>
+          <span>Parselasyon</span><b>✦</b><span class="outline">İmar Danışmanlığı</span><b>✦</b>
+        </div>
+      </div>
+
+      <!-- ============ HAKKIMIZDA ============ -->
+      <section class="about" id="hakkimizda">
+        <div class="container">
+          <p class="section-tag mono">(01) Hakkımızda</p>
+          <p class="about__statement" data-scrub-text>
+            Bir plan, kâğıt üzerindeki çizgilerden fazlasıdır. Okula yürüyen çocuğun güvenliği, parkta
+            oturanın gölgesi, esnafın kapısına gelen müşteridir. Biz her çizgiyi bu sorumlulukla
+            çiziyoruz.
+          </p>
+
+          <div class="about__grid">
+            <figure class="portrait" data-reveal>
+              <!-- Fotoğraf eklemek için: public/semina.jpg dosyasını koyup aşağıdaki img satırını açın -->
+              <!-- <img src="/semina.jpg" alt="Şehir Plancısı Semina Dağlı Başoğlu" class="portrait__img" /> -->
+              <svg class="portrait__contours" id="portrait-contours" aria-hidden="true"></svg>
+              <span class="portrait__mono">SDB</span>
+              <figcaption class="mono">
+                <strong>Semina Dağlı Başoğlu</strong>
+                <span>Şehir Plancısı · Kurucu</span>
+              </figcaption>
+            </figure>
+
+            <div class="about__text">
+              <h2 class="h2" data-split>Kente ve insana <em>dokunan</em> planlar</h2>
+              <p data-reveal>
+                Sem Şehir Planlama, Şehir Plancısı Semina Dağlı Başoğlu tarafından kurulan bir planlama ve
+                danışmanlık ofisidir. Bireysel mülk sahiplerinden yatırımcılara, kooperatiflerden
+                belediyelere kadar geniş bir yelpazede; planlama sürecini anlaşılır, şeffaf ve
+                sonuç odaklı biçimde yürütüyoruz.
+              </p>
+              <p data-reveal>
+                Her projeye mevzuatı, mülkiyeti, topoğrafyayı ve kentin hafızasını birlikte okuyarak
+                başlıyoruz. Amacımız yalnızca onaylanan bir plan değil; yıllar sonra da içinde yaşamaktan
+                mutluluk duyulacak bir yer.
+              </p>
+              <p class="signature" data-reveal>Semina Dağlı Başoğlu</p>
+            </div>
+          </div>
+
+          <!-- TODO: "Planlanan alan" ve "Kurum ve belediye" sayıları örnektir, gerçek değerlerle güncelleyin -->
+          <div class="stats">
+            <div class="stat" data-reveal>
+              <span class="stat__num"><b data-count="5">0</b>+</span>
+              <span class="stat__label">Yıllık deneyim</span>
+            </div>
+            <div class="stat" data-reveal>
+              <span class="stat__num"><b data-count="300">0</b>+</span>
+              <span class="stat__label">Tamamlanan proje</span>
+            </div>
+            <div class="stat" data-reveal>
+              <span class="stat__num"><b data-count="2400">0</b><small>ha</small></span>
+              <span class="stat__label">Planlanan alan</span>
+            </div>
+            <div class="stat" data-reveal>
+              <span class="stat__num"><b data-count="30">0</b>+</span>
+              <span class="stat__label">Kurum ve belediye</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ÖLÇEKLER (yakınlaşan plan) ============ -->
+      <section class="scales" id="olcekler">
+        <div class="scales__pin">
+          <div class="scales__copy">
+            <p class="section-tag mono">(02) Planlama Kademeleri</p>
+            <h2 class="h2 scales__title">Bölgeden sokağa, <em>her ölçekte</em> plan.</h2>
+            <div class="scales__steps">
+              <article class="scale-step is-active">
+                <span class="mono scale-step__ratio">1/100.000</span>
+                <h3>Çevre Düzeni Planı</h3>
+                <p>
+                  Kentsel ve kırsal yerleşimler, tarım, orman ve koruma alanları arasındaki dengeyi kuran,
+                  üst ölçekli stratejik plan.
+                </p>
+              </article>
+              <article class="scale-step">
+                <span class="mono scale-step__ratio">1/5000</span>
+                <h3>Nazım İmar Planı</h3>
+                <p>
+                  Arazi kullanımlarını, nüfus yoğunluklarını, ana ulaşım akslarını ve gelişme yönlerini
+                  belirleyen, uygulama planlarına esas olan plan.
+                </p>
+              </article>
+              <article class="scale-step">
+                <span class="mono scale-step__ratio">1/1000</span>
+                <h3>Uygulama İmar Planı</h3>
+                <p>
+                  Yapı adalarını, emsal, TAKS ve yükseklik gibi yapılaşma koşullarını, yol ve donatı
+                  alanlarını parsel düzeyinde kesinleştirir.
+                </p>
+              </article>
+              <article class="scale-step">
+                <span class="mono scale-step__ratio">1/500</span>
+                <h3>Kentsel Tasarım Projesi</h3>
+                <p>
+                  Meydanları, sokakları, yapı kütlelerini ve peyzajı insan ölçeğinde, bütüncül olarak
+                  tasarlar.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div class="scales__visual">
+            <div class="lens">
+              <svg id="zoom-plan" aria-hidden="true"></svg>
+              <div class="lens__reticle" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+              <div class="lens__hud mono" aria-hidden="true">
+                <span>Ölçek</span><strong class="lens__ratio">1/100.000</strong>
+              </div>
+              <div class="lens__bar" aria-hidden="true">
+                <span class="is-active"></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ HİZMETLER ============ -->
+      <section class="services" id="hizmetler">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-tag mono">(03) Hizmetler</p>
+            <h2 class="h2" data-split>Planlamanın <em>her adımında</em> yanınızdayız</h2>
+          </div>
+
+          <div class="cards">
+            <article class="card card--konut" style="--i: 0">
+              <div class="card__top">
+                <span class="card__num mono">01</span>
+                <ul class="tags mono"><li>1/5000</li><li>1/1000</li><li>Mevzi Plan</li></ul>
+              </div>
+              <div class="card__body">
+                <h3>İmar Planları</h3>
+                <p>
+                  Nazım, uygulama ve mevzi imar planlarının hazırlanması. Mekânsal Planlar Yapım
+                  Yönetmeliği'ne uygun analiz, sentez, plan paftaları ve plan raporları.
+                </p>
+              </div>
+              <svg class="card__art" viewBox="0 0 200 200" aria-hidden="true">
+                <rect x="20" y="20" width="70" height="70" rx="4" /><rect x="110" y="20" width="70" height="40" rx="4" />
+                <rect x="110" y="70" width="70" height="110" rx="4" /><rect x="20" y="110" width="70" height="70" rx="4" />
+              </svg>
+            </article>
+
+            <article class="card card--ticaret" style="--i: 1">
+              <div class="card__top">
+                <span class="card__num mono">02</span>
+                <ul class="tags mono"><li>Plan Tadilatı</li><li>Kurum Görüşü</li><li>Meclis Süreci</li></ul>
+              </div>
+              <div class="card__body">
+                <h3>Plan Değişikliği &amp; Revizyon</h3>
+                <p>
+                  Mülkünüzün potansiyelini mevzuat çerçevesinde değerlendirir, gerekçeli plan değişikliği
+                  tekliflerini hazırlar; kurum ve meclis süreçlerini sizin adınıza takip ederiz.
+                </p>
+              </div>
+              <svg class="card__art" viewBox="0 0 200 200" aria-hidden="true">
+                <rect x="20" y="20" width="160" height="160" rx="4" class="dash" />
+                <path d="M20 100 H180 M100 20 V180" class="dash" /><rect x="100" y="20" width="80" height="80" rx="4" />
+              </svg>
+            </article>
+
+            <article class="card card--donati" style="--i: 2">
+              <div class="card__top">
+                <span class="card__num mono">03</span>
+                <ul class="tags mono"><li>Parselasyon</li><li>DOP</li><li>Tevhit / İfraz</li></ul>
+              </div>
+              <div class="card__body">
+                <h3>Parselasyon &amp; 18. Madde Uygulamaları</h3>
+                <p>
+                  İmar planlarının arazide hayata geçmesi için parselasyon planları, düzenleme ortaklık
+                  payı hesapları ve hisselendirme çalışmaları.
+                </p>
+              </div>
+              <svg class="card__art" viewBox="0 0 200 200" aria-hidden="true">
+                <path d="M20 40 L90 20 L120 90 L40 120 Z" /><path d="M100 20 L180 30 L170 100 L130 90 Z" />
+                <path d="M40 130 L125 100 L170 110 L180 180 L30 180 Z" />
+              </svg>
+            </article>
+
+            <article class="card card--ink" style="--i: 3">
+              <div class="card__top">
+                <span class="card__num mono">04</span>
+                <ul class="tags mono"><li>6306 S.K.</li><li>Rezerv Alan</li><li>Paydaş Katılımı</li></ul>
+              </div>
+              <div class="card__body">
+                <h3>Kentsel Dönüşüm</h3>
+                <p>
+                  6306 sayılı Kanun kapsamında riskli alan ve rezerv yapı alanı süreçlerinde planlama,
+                  mülkiyet analizi ve hak sahipleriyle uzlaşı çalışmaları.
+                </p>
+              </div>
+              <svg class="card__art" viewBox="0 0 200 200" aria-hidden="true">
+                <rect x="20" y="110" width="30" height="70" rx="3" /><rect x="60" y="80" width="30" height="100" rx="3" />
+                <rect x="100" y="50" width="30" height="130" rx="3" /><rect x="140" y="20" width="40" height="160" rx="3" />
+              </svg>
+            </article>
+
+            <article class="card card--yesil" style="--i: 4">
+              <div class="card__top">
+                <span class="card__num mono">05</span>
+                <ul class="tags mono"><li>Kamusal Alan</li><li>Peyzaj</li><li>1/500</li></ul>
+              </div>
+              <div class="card__body">
+                <h3>Kentsel Tasarım</h3>
+                <p>
+                  Meydanlar, kıyılar, sokaklar ve yeni yerleşim alanları için insan ölçeğinde, iklime
+                  duyarlı ve yaşayan kamusal mekânlar tasarlıyoruz.
+                </p>
+              </div>
+              <svg class="card__art" viewBox="0 0 200 200" aria-hidden="true">
+                <circle cx="100" cy="100" r="78" /><circle cx="100" cy="100" r="44" class="dash" />
+                <circle cx="100" cy="100" r="12" />
+              </svg>
+            </article>
+
+            <article class="card card--paper" style="--i: 5">
+              <div class="card__top">
+                <span class="card__num mono">06</span>
+                <ul class="tags mono"><li>İmar Durumu</li><li>Emsal Hesabı</li><li>Fizibilite</li></ul>
+              </div>
+              <div class="card__body">
+                <h3>İmar Danışmanlığı &amp; Fizibilite</h3>
+                <p>
+                  Arsa almadan önce imar durumunu yorumlar, yapılaşma potansiyelini hesaplar ve
+                  yatırım kararınız için anlaşılır bir fizibilite raporu hazırlarız.
+                </p>
+              </div>
+              <svg class="card__art" viewBox="0 0 200 200" aria-hidden="true">
+                <path d="M20 180 V20 M20 180 H180" /><path d="M40 150 L80 110 L110 130 L170 50" class="dash" />
+                <circle cx="170" cy="50" r="8" />
+              </svg>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROJELER (yatay kayan) ============ -->
+      <!-- TODO: Projeler örnektir. Gerçek proje adları, konumları ve görselleriyle güncelleyin -->
+      <section class="projects" id="projeler">
+        <div class="projects__pin">
+          <div class="projects__head container">
+            <p class="section-tag mono">(04) Seçili Çalışmalar</p>
+            <h2 class="h2">Çizgiden <em>kente</em></h2>
+            <p class="projects__counter mono"><span class="projects__current">01</span> / 05</p>
+          </div>
+          <div class="projects__track" data-cursor="Kaydır">
+            <article class="project">
+              <div class="project__media"><svg data-plan-seed="11" data-plan-variant="coast"></svg></div>
+              <div class="project__info">
+                <span class="mono">Kentsel Tasarım · 1/500</span>
+                <h3>Kıyı Bandı Kentsel Tasarım Projesi</h3>
+                <p>Kıyıyı kentle yeniden buluşturan yürüyüş aksı, meydanlar ve yeşil koridorlar.</p>
+              </div>
+            </article>
+            <article class="project">
+              <div class="project__media"><svg data-plan-seed="23"></svg></div>
+              <div class="project__info">
+                <span class="mono">Nazım İmar Planı · 1/5000</span>
+                <h3>Yeni Gelişme Alanı Nazım İmar Planı</h3>
+                <p>Nüfus projeksiyonuna dayalı yoğunluk kademelenmesi ve donatı dağılımı.</p>
+              </div>
+            </article>
+            <article class="project">
+              <div class="project__media"><svg data-plan-seed="37" data-plan-variant="dense"></svg></div>
+              <div class="project__info">
+                <span class="mono">Uygulama İmar Planı · 1/1000</span>
+                <h3>Konut Alanı Uygulama İmar Planı</h3>
+                <p>Parsel ölçeğinde yapılaşma koşulları, yol ve otopark kurgusu.</p>
+              </div>
+            </article>
+            <article class="project">
+              <div class="project__media"><svg data-plan-seed="52" data-plan-variant="historic"></svg></div>
+              <div class="project__info">
+                <span class="mono">Koruma Amaçlı İmar Planı</span>
+                <h3>Tarihi Çarşı Koruma Amaçlı İmar Planı</h3>
+                <p>Tescilli yapı dokusunu koruyan, çarşıyı yaşatan bütüncül plan kararları.</p>
+              </div>
+            </article>
+            <article class="project">
+              <div class="project__media"><svg data-plan-seed="64" data-plan-variant="dense"></svg></div>
+              <div class="project__info">
+                <span class="mono">Kentsel Dönüşüm · 6306</span>
+                <h3>Kentsel Dönüşüm Alanı Planı</h3>
+                <p>Hak sahipliği analiziyle desteklenen, aşamalı ve uygulanabilir dönüşüm kurgusu.</p>
+              </div>
+            </article>
+            <a href="#iletisim" class="project project--cta">
+              <span class="mono">Sıradaki proje</span>
+              <strong>Sizin projeniz<br /><em>olabilir.</em></strong>
+              <i>→</i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SÜREÇ ============ -->
+      <section class="process" id="surec">
+        <div class="container process__grid">
+          <div class="process__head">
+            <p class="section-tag mono">(05) Çalışma Süreci</p>
+            <h2 class="h2" data-split>Fikirden onaya, <em>adım adım</em></h2>
+            <p data-reveal>
+              Planlama süreçleri karmaşık görünebilir. Her aşamada ne olduğunu, ne kadar süreceğini ve
+              sizden ne beklendiğini açıkça paylaşıyoruz.
+            </p>
+          </div>
+          <div class="steps">
+            <span class="steps__line" aria-hidden="true"><i></i></span>
+            <ol>
+            <li class="step">
+              <span class="step__dot mono">01</span>
+              <h3>Tanışma &amp; Ön Değerlendirme</h3>
+              <p>Talebinizi dinliyor, tapu ve imar durumu belgelerini inceliyor, ilk yol haritasını çıkarıyoruz.</p>
+            </li>
+            <li class="step">
+              <span class="step__dot mono">02</span>
+              <h3>Analiz &amp; Araştırma</h3>
+              <p>Halihazır harita, mülkiyet, jeolojik etüt, üst ölçek plan kararları ve mevzuatı birlikte okuyoruz.</p>
+            </li>
+            <li class="step">
+              <span class="step__dot mono">03</span>
+              <h3>Plan Kararları &amp; Tasarım</h3>
+              <p>Alternatifleri karşılaştırıyor, en uygun kurguyu plan paftası, rapor ve görsellerle somutlaştırıyoruz.</p>
+            </li>
+            <li class="step">
+              <span class="step__dot mono">04</span>
+              <h3>Kurum Görüşleri &amp; Onay</h3>
+              <p>İlgili kurumlardan görüşleri alıyor, belediye meclisi ve onay süreçlerini adım adım takip ediyoruz.</p>
+            </li>
+            <li class="step">
+              <span class="step__dot mono">05</span>
+              <h3>Askı &amp; Uygulama</h3>
+              <p>Plan askı sürecini, varsa itirazları ve sonrasındaki uygulama adımlarını sonuna kadar yönetiyoruz.</p>
+            </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SSS ============ -->
+      <section class="faq" id="sss">
+        <div class="container faq__grid">
+          <div>
+            <p class="section-tag mono">(06) Sıkça Sorulan Sorular</p>
+            <h2 class="h2" data-split>Merak <em>edilenler</em></h2>
+          </div>
+          <div class="faq__list">
+            <div class="faq__item">
+              <button class="faq__q" aria-expanded="false">
+                <span>İmar durumu belgesi nedir, ne işe yarar?</span><i aria-hidden="true"></i>
+              </button>
+              <div class="faq__a"><div><p>
+                Parselinizin hangi amaçla ve hangi koşullarla (emsal, TAKS, yükseklik, çekme mesafeleri)
+                yapılaşabileceğini gösteren belgedir ve ilgili belediyeden alınır. Biz bu belgeyi
+                yorumlayarak parselinizin gerçek yapılaşma potansiyelini raporluyoruz.
+              </p></div></div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" aria-expanded="false">
+                <span>Plan değişikliği ne kadar sürer?</span><i aria-hidden="true"></i>
+              </button>
+              <div class="faq__a"><div><p>
+                Süre; kurum görüşlerine, belediye meclisi takvimine ve askı sürecine göre değişir. İlk
+                görüşmede projenize özel, gerçekçi bir zaman çizelgesi çıkarıyoruz.
+              </p></div></div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" aria-expanded="false">
+                <span>Askı süreci nedir?</span><i aria-hidden="true"></i>
+              </button>
+              <div class="faq__a"><div><p>
+                Onaylanan imar planları, 3194 sayılı İmar Kanunu uyarınca bir ay süreyle ilan edilir
+                (askıya çıkarılır). Bu süre içinde plana itiraz edilebilir; itirazlar değerlendirildikten
+                sonra plan kesinleşir.
+              </p></div></div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" aria-expanded="false">
+                <span>18. madde uygulaması nedir?</span><i aria-hidden="true"></i>
+              </button>
+              <div class="faq__a"><div><p>
+                İmar Kanunu'nun 18. maddesine göre, imar planı bulunan alanlarda kadastral parsellerin
+                birleştirilip plana uygun imar parsellerine dönüştürülmesidir. Bu süreçte yol, park gibi
+                kamu alanları için düzenleme ortaklık payı (DOP) ayrılır.
+              </p></div></div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" aria-expanded="false">
+                <span>Kentsel dönüşümde nasıl destek veriyorsunuz?</span><i aria-hidden="true"></i>
+              </button>
+              <div class="faq__a"><div><p>
+                6306 sayılı Kanun kapsamındaki alanlarda plan hazırlığı, mülkiyet ve hak sahipliği
+                analizi, alternatif yerleşim senaryoları ve paydaşlarla uzlaşı süreçlerinde
+                danışmanlık veriyoruz.
+              </p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ İLETİŞİM ============ -->
+      <section class="contact" id="iletisim">
+        <div class="container">
+          <p class="section-tag mono">(07) İletişim</p>
+          <h2 class="contact__title">
+            <span class="line">Birlikte</span>
+            <span class="line"><em>planlayalım.</em></span>
+          </h2>
+
+          <div class="contact__grid">
+            <!-- TODO: E-posta adresini gerçek adresle güncelleyin -->
+            <ul class="contact__info">
+              <li data-reveal>
+                <small class="mono">E-posta</small>
+                <a href="mailto:info@semsehirplanlama.com" class="link-line">info@semsehirplanlama.com</a>
+              </li>
+              <li data-reveal>
+                <small class="mono">Telefon</small>
+                <a href="tel:+905397277678" class="link-line">0539 727 76 78</a>
+              </li>
+              <li data-reveal>
+                <small class="mono">Ofis</small>
+                <address class="contact__address">
+                  Bulancak Mahallesi Hasan Demirel Sokak No:7<br />
+                  Remzi Karaibrahim İş Merkezi, Kat:3 Daire:7<br />
+                  Bulancak / Giresun
+                </address>
+              </li>
+              <li data-reveal>
+                <small class="mono">Çalışma saatleri</small>
+                <span>Hafta içi 09:00 – 18:00</span>
+              </li>
+            </ul>
+
+            <form class="form" data-reveal novalidate>
+              <div class="field">
+                <input id="f-name" name="name" type="text" required placeholder=" " autocomplete="name" />
+                <label for="f-name">Adınız Soyadınız</label>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <input id="f-mail" name="email" type="email" required placeholder=" " autocomplete="email" />
+                  <label for="f-mail">E-posta</label>
+                </div>
+                <div class="field">
+                  <input id="f-tel" name="phone" type="tel" placeholder=" " autocomplete="tel" />
+                  <label for="f-tel">Telefon</label>
+                </div>
+              </div>
+              <fieldset class="chips">
+                <legend class="mono">Konu</legend>
+                <label><input type="radio" name="topic" value="İmar Planı" checked /><span>İmar Planı</span></label>
+                <label><input type="radio" name="topic" value="Plan Değişikliği" /><span>Plan Değişikliği</span></label>
+                <label><input type="radio" name="topic" value="Kentsel Dönüşüm" /><span>Kentsel Dönüşüm</span></label>
+                <label><input type="radio" name="topic" value="İmar Danışmanlığı" /><span>İmar Danışmanlığı</span></label>
+                <label><input type="radio" name="topic" value="Diğer" /><span>Diğer</span></label>
+              </fieldset>
+              <div class="field">
+                <textarea id="f-msg" name="message" rows="4" required placeholder=" "></textarea>
+                <label for="f-msg">Projenizden kısaca bahsedin</label>
+              </div>
+              <button type="submit" class="btn btn--accent btn--wide magnetic">
+                <span>Mesajı gönder</span><i>→</i>
+              </button>
+              <p class="form__note" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <p class="footer__claim">Yaşanabilir kentler, <em>iyi planlarla</em> başlar.</p>
+          <button class="btn btn--ghost-light magnetic to-top"><span>Yukarı çık</span><i>↑</i></button>
+        </div>
+        <p class="footer__word" aria-hidden="true">Sem Şehir Planlama</p>
+        <div class="footer__bottom mono">
+          <span>© <span class="year"></span> Sem Şehir Planlama</span>
+          <span>Şehir Plancısı Semina Dağlı Başoğlu</span>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
