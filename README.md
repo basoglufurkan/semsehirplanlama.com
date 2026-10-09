@@ -35,5 +35,4 @@ npm run build
 
 - Hakkımızda bölümündeki "Planlanan alan" ve "Kurum ve belediye" sayıları
 - Projeler bölümündeki örnek projeler
-- E-posta adresi
 - Fotoğraf: `public/semina.jpg` ekleyip `index.html` içindeki `<img>` satırını açın
